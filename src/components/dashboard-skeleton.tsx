@@ -7,7 +7,7 @@ export default function DashboardSkeleton() {
         <div className="h-10 w-36 bg-gray-300 dark:bg-gray-600 rounded" />
       </div>
       {/* Skeleton for issues list */}
-      <div className="overflow-hidden rounded-lg border border-gray-200 dark:border-dark-border-default bg-white dark:bg-dark-high shadow-sm">
+      <div className="overflow-hidden rounded-lg border border-gray-200 dark:border-dark-border-default shadow-sm">
         {/* Header row skeleton */}
         <div className="grid grid-cols-12 gap-4 px-6 py-3 bg-gray-50 dark:bg-dark-elevated border-b border-gray-200 dark:border-dark-border-default">
           <div className="col-span-5 h-4 bg-gray-300 dark:bg-gray-600 rounded" />

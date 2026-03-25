@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
-import { CheckCircle2, XCircle } from 'lucide-react'
+import React from 'react';
+import Link from 'next/link';
+import { CheckCircle2, XCircle } from 'lucide-react';
 
 export default function PricingPage() {
   return (
@@ -88,24 +88,24 @@ export default function PricingPage() {
         </a>
       </div>
     </div>
-  )
+  );
 }
 
 interface PricingFeature {
-  name: string
-  included: boolean
+  name: string;
+  included: boolean;
 }
 
 interface PricingCardProps {
-  title: string
-  price: string
-  period?: string
-  description: string
-  features: PricingFeature[]
-  buttonText: string
-  buttonLink: string
-  highlighted?: boolean
-  badge?: string
+  title: string;
+  price: string;
+  period?: string;
+  description: string;
+  features: PricingFeature[];
+  buttonText: string;
+  buttonLink: string;
+  highlighted?: boolean;
+  badge?: string;
 }
 
 function PricingCard({
@@ -144,9 +144,9 @@ function PricingCard({
         {features.map((feature, index) => (
           <li key={index} className="flex items-start">
             {feature.included ? (
-              <CheckCircle2 className="h-5 w-5 text-green-300 mr-2 flex-shrink-0" />
+              <CheckCircle2 className="h-5 w-5 text-green-300 mr-2 shrink-0" />
             ) : (
-              <XCircle className="h-5 w-5 text-gray-500 mr-2 flex-shrink-0" />
+              <XCircle className="h-5 w-5 text-gray-500 mr-2 shrink-0" />
             )}
             <span
               className={
@@ -162,6 +162,7 @@ function PricingCard({
       </ul>
       <Link
         href={buttonLink}
+        transitionTypes={['fade']}
         className={`w-full inline-flex h-10 items-center justify-center rounded-md px-8 py-2 text-sm font-medium shadow transition-colors ${
           highlighted
             ? 'bg-blue-600 text-white hover:bg-blue-700'
@@ -171,5 +172,5 @@ function PricingCard({
         {buttonText}
       </Link>
     </div>
-  )
+  );
 }

@@ -15,11 +15,11 @@ export default async function LandingPage() {
               </span>
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-gray-600 dark:text-gray-300">
-              A minimal and elegant issue tracking tool for modern teams. Manage
-              your projects with ease.
+              A minimal and elegant issue tracking tool for Issue-Trackingrn
+              teams. Manage your projects with ease.
             </p>
             <div className="mt-10">
-              <Link href="/signup">
+              <Link href="/signup" transitionTypes={['fade']}>
                 <Button size="lg">Get Started</Button>
               </Link>
             </div>
@@ -31,7 +31,7 @@ export default async function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
           <div className="text-center text-sm text-gray-500 dark:text-gray-400">
             <p>
-              © <Timestamp /> Mode. Built for Next.js Fundamentals.
+              © <Timestamp /> Issue-Tracking. Built for Next.js Fundamentals.
             </p>
           </div>
         </div>

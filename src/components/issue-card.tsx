@@ -47,7 +47,7 @@ export default function IssueCard({ issue }: IssueCardProps) {
   };
 
   return (
-    <Link href={`/issues/${id}`}>
+    <Link href={`/issues/${id}`} transitionTypes={['fade']}>
       <Card className="h-full hover:shadow-md transition-shadow cursor-pointer">
         <CardHeader className="pb-2">
           <CardTitle className="line-clamp-1 text-base">{title}</CardTitle>
