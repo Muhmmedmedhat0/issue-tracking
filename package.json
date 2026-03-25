@@ -10,18 +10,42 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "@tanstack/react-query": "^5.95.2",
+    "@types/uuid": "^10.0.0",
+    "bcrypt": "^6.0.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.3.1",
+    "drizzle-orm": "^0.45.1",
+    "jose": "^6.2.2",
+    "lucide-react": "^1.5.0",
+    "nanoid": "^5.1.7",
     "next": "16.2.1",
+    "pg": "^8.20.0",
+    "postgres": "^3.4.8",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-hot-toast": "^2.6.0",
+    "react-icons": "^5.6.0",
+    "tailwind-merge": "^3.5.0",
+    "uuid": "^13.0.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
+    "@eslint/eslintrc": "^3.3.5",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/bcrypt": "^6.0.0",
+    "@types/node": "^20.19.37",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "babel-plugin-react-compiler": "1.0.0",
+    "drizzle-kit": "^0.31.10",
+    "eslint": "^10.1.0",
+    "eslint-config-next": "^16.2.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   }
 }
